@@ -1,0 +1,29 @@
+
+	@Test(groups = "group1")
+	public void Demo()
+	{
+		WebDriver driver=new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		driver.get("https://demo.guru99.com/test/upload/");
+		String title = driver.getTitle();
+		System.out.println(title);
+	}
+
+	@Test(groups = "group2")
+	public void Orange()
+	{
+		WebDriver driver=new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		String title = driver.getTitle();
+		System.out.println(title);
+	}
+	@Test(groups = "group3")
+	public void Flipkart()
+	{
+		WebDriver driver=new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		driver.get("https://www.flipkart.com/");
+		String title = driver.getTitle();
+		System.out.println(title);
+	}
